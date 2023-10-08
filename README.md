@@ -4,9 +4,14 @@ Apache Airflow is a platform to define data pipelines, monitor execution and han
 
 Airflow solves several problems like managing scheduled jobs and easily handling dependencies between tasks. It also provides a great UI to monitor and manage the workflows.
 
-## 1. Installation
+This repository is part of a course on applied Apache Airflow. It is meant to be used as a reference for the course and not as a standalone guide. 
+
+## Lesson 1: Installation
 
 There are many different ways you can install and use Airflow. From building the project from source to using a hosted (ready-to-use) service. In this course we will explore installing from the Python Package Index (PyPI) as well as using Docker Compose. 
+
+* [Installing from PyPI](./examples/1-pip/)
+* [Installing with Docker Compose](./examples/2-compose/)
 
 ### PyPI
 
@@ -58,6 +63,19 @@ docker compose up
 
 Access the environment at [localhost:8080](http://localhost:8080). Use the default credentials `airflow` and `airflow` to login.
 
-## 2. Apache Airflow Fundamentals
+## Lesson 2: Apache Airflow Fundamentals
 
-## 3. Creating and running a Pipeline
+Airflow has several components that are useful to understand before diving into the code. Start by exploring the simple example to add a Python task to a DAG. Run the task and explore the logs and the UI.
+
+* [Simple DAG](./examples/3-simple/)
+
+## Lesson 3: Creating and running a Pipeline
+
+Creating a pipeline in Airflow allows you to feel more comfortable with core concepts related to Data Engineering. In this example we will create a pipeline that will download a file from the internet, we will clean the dataset using Pandas and then we will persist specific data to a database. All of these actions will be performed in separate steps in tasks.
+
+* [Example pipeline](./examples/4-applied/)
+
+## Lesson 4: Practice Lab
+
+Use the [included practice lab](./lab.md) to build a data pipeline using Apache Airflow to extract census data, transform it, and load it into a database based on certain conditions. Follow the steps in the lab to complete the exercise in your own repository. 
+
