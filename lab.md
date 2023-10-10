@@ -17,8 +17,8 @@ In this practice lab, you will build a data pipeline using Apache Airflow to ext
     ```
 1. Read in the CSV data and handle any missing values.
 1. Filter the data and choose a condition to extract specific data. For example:
-* Age is greater than 30
-* State is 'Iowa'
+    * Age is greater than 30
+    * State is 'Iowa'
 1. Parse the data into a clean DataFrame and store it in a database
 1. Set up the task ordering and dependencies correctly
 1. Monitor the pipeline execution in the Airflow UI
